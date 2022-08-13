@@ -17,7 +17,7 @@ a {
 ul {
   list-style: none;
 }
-img{
+img {
   width: 100%;
 }
 
@@ -30,9 +30,7 @@ img{
   --white: #ffffff;
   --gray: #ced6e0;
   --red: #ff0000;
-  --box_shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  --box_shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 /*========================== header style =====================  */
@@ -46,7 +44,7 @@ header {
   align-items: center;
   box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  background: #F3F7F8;
+  background: #f3f7f8;
 }
 
 .logo a {
@@ -131,10 +129,10 @@ header {
 }
 
 /*======================== banner style ======================= */
-#banner{
+#banner {
   padding: 50px 0;
 }
-.banner{
+.banner {
   width: 92%;
   height: 500px;
   background: var(--light_green);
@@ -146,7 +144,7 @@ header {
   overflow: hidden;
 }
 
-.banner .bg-1{
+.banner .bg-1 {
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -154,31 +152,31 @@ header {
   top: -50px;
   left: -50px;
 }
-.banner .bg-2{
+.banner .bg-2 {
   width: 200px;
   position: absolute;
   left: 40%;
   top: -20px;
 }
-.banner .bg-3{
+.banner .bg-3 {
   position: absolute;
   width: 400px;
   left: 73%;
   bottom: -60px;
 }
 
-.banner-text h3{
+.banner-text h3 {
   font-size: 35px;
   padding-left: 40px;
-  font-family: lobster,cursive;
+  font-family: lobster, cursive;
 }
-.banner-text p{
+.banner-text p {
   padding-left: 45px;
   color: #696969;
   font-weight: bold;
   margin-top: -10px;
 }
-.search{
+.search {
   position: absolute;
   left: 35%;
   top: 35%;
@@ -189,17 +187,17 @@ header {
   display: flex;
   align-items: center;
 }
-.fa-search{
+.fa-search {
   padding: 0 10px;
 }
-.search input[type=text]{
+.search input[type="text"] {
   width: 75%;
   padding: 5px;
   outline: none;
   border: none;
   background: whitesmoke;
 }
-.search-btn{
+.search-btn {
   width: 100px;
   height: 40px;
   border: none;
@@ -210,3 +208,64 @@ header {
   cursor: pointer;
 }
 
+/*======================== features style ======================= */
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 92%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.features .fbox {
+  flex-basis: 30%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: var(--box_shadow);
+}
+.fbox1{
+  background: #F0F9FF;
+}
+.fbox1 i{
+  color: #1d4fd8e1;
+}
+.fbox1 button{
+  background: #1d4fd8e1;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.fbox2{
+  background: #F0F9FF;
+}
+.fbox2 i{
+  color: #7C3AED;
+}
+.fbox2 button{
+  background: #7c3aed;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.fbox3{
+  background: #F0F9FF;
+}
+.fbox3 i{
+  color: #22C55E;
+}
+.fbox3 button{
+  background: #22C55E;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.fbox i {
+  font-size: 50px;
+}
+.fbox button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
