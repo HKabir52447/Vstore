@@ -218,7 +218,7 @@ header {
   padding: 50px 0;
 }
 .features .fbox {
-  flex-basis: 30%;
+  flex-basis: 25%;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -268,4 +268,98 @@ header {
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid transparent;
+}
+
+/*======================== products style ======================= */
+#products h2{
+  text-align: center;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 35px;  
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 92%;
+  height: 450px;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-family: Poppins, sans-serif;
+}
+.product{
+  flex-basis: 30%;
+  border: 1px solid whitesmoke;
+  box-shadow: var(--box_shadow);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.product img{
+  width: 100%;
+  height: 250px;
+  padding: 20px 40px 40px 40px;
+}
+.product .fa-heart,.product .fa-thumbs-up{
+  position: absolute;
+  font-size: 25px;
+  color: #05C46B;
+  opacity: 0;
+  cursor: pointer;
+}
+.product .fa-heart{
+  top: 10;
+  right: -30px;
+  transition: 0.3s linear;
+}
+.product .fa-thumbs-up{
+  top: 65px;
+  right: -30px;
+  transition: 0.4s linear;
+}
+.product:hover .fa-heart{
+  right: 25px;
+  opacity: 1;
+}
+.product:hover .fa-thumbs-up{
+  right: 25px;
+  opacity: 1;
+}
+
+.product h3{
+  color: var(--black);
+}
+.product h4{
+  color: #77797e80;
+  font-size: 14px;
+  font-weight: bold;
+}
+.product p{
+font-weight: bold;
+color: rgb(0, 0, 0);
+padding-bottom: 10px;
+}
+
+.product button{
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #9ff1bd;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.fa-shopping-bag{
+  padding-right: 5px;
+}
+.product:hover button{
+  background: #05C46B;
+  color: whitesmoke;
 }
